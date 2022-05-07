@@ -1,0 +1,127 @@
+﻿body{
+    background-color: black;
+}
+.nav2 {
+    
+    font-size: 20px;
+    
+    color:black;
+}
+
+    .nav2:hover {
+        transform: scale(1.1);
+        background-color: darkgrey !important;
+        border-radius: 10px;
+    }
+
+.navbar-nav {
+    flex-direction: row;
+}
+
+.nav-link {
+    padding-right: .5rem !important;
+    padding-left: .5rem !important;
+}
+
+.ml-auto .dropdown-menu {
+    left: auto !important;
+    right: 0px;
+}
+.nav3 {
+    background-color: maroon;
+}
+.nav3:hover {
+    transform: scale(1.1)
+}
+.nav4{
+    background-color: darkgoldenrod;
+    color: black !important;
+    
+}
+.nav4:hover{
+    transform:scale(1.1)
+}
+.nav5{
+    color:white !important;
+}
+.contxd {
+    background-image: url(../assets/img/champs/akali.jpg);
+    display: block;
+    border-style: solid;
+    transition-duration: 1s;
+}
+.rg {
+        background-image: url(../assets/img/champs/vlad_img.jpg);
+        display: block;
+        border-style: solid;
+        transition-duration: 1s;
+    }
+.bt1:hover{
+    background-color:forestgreen;
+    border-style:solid;
+    
+
+}
+.bg1{
+    background-color: brown;
+    border-radius: 10px;
+    height:50px;
+    width:170px;
+    text-align:center;
+    
+    
+
+}
+.bg3 {
+    background-image: url(../assets/img/project.jpg);
+    background-size:cover;
+    display: block;
+    border-style: solid;
+    height:500px;
+}
+.bg4{
+    background-color:lightgreen;
+    border-radius:10px;
+    border-style:solid;
+    width:400px;
+   margin:auto;
+   
+  
+}
+.giro {
+   
+    position: absolute;
+    transform:scale(1.2);
+}
+    .giro:hover {
+        animation-name: move;
+        animation-duration: 1s;
+        position: absolute;
+        transform: scale(1.2);
+       
+    }
+@keyframes move {
+    0% {
+        transform: scale(1.2);
+    }
+
+    50% {
+        -moz-transform: rotate(4deg);
+        -webkit-transform: rotate(4deg);
+        -o-transform: rotate(4deg);
+        -ms-transform: rotate(4deg);
+        transform: rotate(4deg)scale(1.2);
+    }
+
+    100% {
+        -moz-transform: rotate(360deg);
+        -webkit-transform: rotate(360deg);
+        -o-transform: rotate(356deg);
+        -ms-transform: rotate(360deg);
+        transform: rotate(360deg) scale(1.2);
+    }
+}
+
+
+
+

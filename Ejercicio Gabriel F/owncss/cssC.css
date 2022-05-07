@@ -1,0 +1,149 @@
+﻿.container1 {
+  
+    position: relative;
+    width: 50%;
+}
+.bgD {
+    width:90%;
+    display:block;
+    margin-top: 100px;
+    margin-bottom: 50px;
+    position: relative;
+    background-image:url("../assets/img/demacia_bg.jpg");
+    border-radius: 30px;
+    border-style:solid;
+}
+
+
+.image1 {
+    display: inline;
+    width: 150px;
+    height: 150px;
+    border-radius: 50px;
+    border-style: solid;
+}
+.image2 {
+    display: block;
+    margin: auto;
+    border-radius: 50px;
+    border-style: solid;
+}
+
+
+
+
+.overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 150px;
+    height: 150px;
+    border-radius: 50px;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: #008CBA;
+    cursor:pointer;
+   
+}
+
+.container1:hover .overlay {
+    opacity: 1;
+}
+
+.Portfolio {
+    position: relative;
+    margin: 5px;
+    
+    float: left;
+    width: 250px;
+}
+
+.btnI {
+    width: 150px;
+    height: 150px;
+    border-radius: 50px;
+    position: absolute;
+    font-size: 20px;
+    bottom: 0px;
+    background-color: transparent;
+    color: transparent;
+    border: none;
+    transition-duration: .6s;
+}
+.btnI:hover{
+    opacity:.99;
+    background-color:cadetblue;
+    color:aliceblue;
+    font-size:20px;
+   
+}
+
+.bgT {
+    transform: translate(43px,0);
+    display: inline-flex;
+    width: 370px;
+    height: 51px;
+    text-align: center;
+    color: #000000;
+    background: #FFFFFF;
+    text-shadow: 2px 2px 0 #bcbcbc, 4px 4px 0 #9c9c9c;
+    border-radius: 15px;
+    border-style: solid;
+    border-bottom: 5px solid #1C6EA4;
+}
+.bgC {
+    border-radius: 15px;
+    color: #FFFFFF;
+    background: #996D6D;
+    text-shadow: #474747 3px 5px 2px;
+}
+.bgI {
+    border-radius: 15px;
+    color: rgba(0,0,0,.6);
+    background: #6e6e6e;
+    text-shadow: 3px 2px 3px rgba(255,255,255,.2);
+    transition-duration: .3s;
+}
+    .bgI:hover {
+        border-radius: 15px;
+        color: rgba(0,0,0,.6);
+        background: #6e6e6e;
+        text-shadow: 3px 2px 3px rgba(255,255,255,.2);
+        transform: scale(1.2);
+        border: 5px outset #1C6EA4;
+    }
+.texta {
+    color: #FFFFFF;
+    background: #333333;
+    text-shadow: 0 -1px 4px #FFF, 0 -2px 10px #ff0, 0 -10px 20px #ff8000, 0 -18px 40px #F00;
+    -webkit-border-radius: 15px 15px 0px 0px;
+    -moz-border-radius: 15px 15px 0px 0px;
+    border-radius: 15px 15px 0px 0px;
+    border-bottom: 5px solid #996D6D;
+    display: inline-flex;
+    transform: translate(550px);
+    width: 200px;
+}
+@keyframes move{
+    0% {
+        
+        
+       
+    }
+    50% {
+        -moz-transform: rotate(4deg);
+        -webkit-transform: rotate(4deg);
+        -o-transform: rotate(4deg);
+        -ms-transform: rotate(4deg);
+        transform: rotate(4deg);
+    }
+    100% {
+        -moz-transform: rotate(356deg);
+        -webkit-transform: rotate(356deg);
+        -o-transform: rotate(356deg);
+        -ms-transform: rotate(356deg);
+        transform: rotate(356deg);
+    }
+}

@@ -1,0 +1,317 @@
+﻿<Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{66082C5B-A0A7-4865-B3E7-21BF8837E724}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Ejercicio_Gabriel_F</RootNamespace>
+    <AssemblyName>Ejercicio Gabriel F</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <Use64BitIISExpress />
+    <IISExpressSSLPort>44399</IISExpressSSLPort>
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform">
+      <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="assets\img\champs\akali.jpg" />
+    <Content Include="assets\img\champs\alistar_img.jpg" />
+    <Content Include="assets\img\champs\ezreal_img.jpg" />
+    <Content Include="assets\img\champs\irelia_img.jpg" />
+    <Content Include="assets\img\champs\irelia_img.png" />
+    <Content Include="assets\img\champs\kaisa_img.jpg" />
+    <Content Include="assets\img\champs\lulu_img.jpg" />
+    <Content Include="assets\img\champs\morde_img.jpg" />
+    <Content Include="assets\img\champs\orn_img.png" />
+    <Content Include="assets\img\champs\qiyana_img.jpg" />
+    <Content Include="assets\img\champs\sion_img.jpg" />
+    <Content Include="assets\img\champs\tarjetas\akali.jpg" />
+    <Content Include="assets\img\champs\tarjetas\alistar.jpg" />
+    <Content Include="assets\img\champs\tarjetas\ez.jpg" />
+    <Content Include="assets\img\champs\tarjetas\irelia.jpg" />
+    <Content Include="assets\img\champs\tarjetas\kaisa.jpg" />
+    <Content Include="assets\img\champs\tarjetas\lulu.jpg" />
+    <Content Include="assets\img\champs\tarjetas\morde.jpg" />
+    <Content Include="assets\img\champs\tarjetas\qiyana.jpg" />
+    <Content Include="assets\img\champs\vlad_img.jpg" />
+    <Content Include="assets\img\champs\xerath_img.jpg" />
+    <Content Include="assets\img\iconosR\adc_icon.png" />
+    <Content Include="assets\img\iconosR\assasin_icon.png" />
+    <Content Include="assets\img\iconosR\Fighterr_icon.png" />
+    <Content Include="assets\img\iconosR\logo.png" />
+    <Content Include="assets\img\iconosR\Logo1.png" />
+    <Content Include="assets\img\iconosR\Mago_icon.png" />
+    <Content Include="assets\img\iconosR\Support_icon.png" />
+    <Content Include="assets\img\iconosR\Tank_icon.png" />
+    <Content Include="Default.aspx" />
+    <Content Include="owncss\cssC.css" />
+    <Content Include="owncss\estilo.css" />
+    <Content Include="Global.asax" />
+    <Content Include="views\Counters_pag.aspx" />
+    <Content Include="views\Infocampeones\Akali.aspx" />
+    <Content Include="views\Infocampeones\Alistar.aspx" />
+    <Content Include="views\Infocampeones\Ezreal.aspx" />
+    <Content Include="views\Infocampeones\Irelia.aspx" />
+    <Content Include="views\Infocampeones\Kaisa.aspx" />
+    <Content Include="views\Infocampeones\Lulu.aspx" />
+    <Content Include="views\Infocampeones\Morde.aspx" />
+    <Content Include="views\Infocampeones\Orn.aspx" />
+    <Content Include="views\Infocampeones\Qiyana.aspx" />
+    <Content Include="views\Infocampeones\Sion.aspx" />
+    <Content Include="views\Infocampeones\Vladimir.aspx" />
+    <Content Include="views\Infocampeones\Xerath.aspx" />
+    <Content Include="views\register.aspx" />
+    <Content Include="views\session.aspx" />
+    <Content Include="owncss\StyleSheet1.css" />
+    <Content Include="owncss\estilos.css" />
+    <Content Include="Web.config" />
+    <Content Include="views\campeones.aspx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="models\ModelCounters1.cs" />
+    <Compile Include="models\ModelUsuarios.cs" />
+    <Compile Include="models\servicio.cs" />
+    <Compile Include="models\Table_Counters.cs" />
+    <Compile Include="models\usuario_LoC.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="views\Counters_pag.aspx.cs">
+      <DependentUpon>Counters_pag.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="views\Counters_pag.aspx.designer.cs">
+      <DependentUpon>Counters_pag.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="views\Infocampeones\Akali.aspx.cs">
+      <DependentUpon>Akali.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="views\Infocampeones\Akali.aspx.designer.cs">
+      <DependentUpon>Akali.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="views\Infocampeones\Alistar.aspx.cs">
+      <DependentUpon>Alistar.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="views\Infocampeones\Alistar.aspx.designer.cs">
+      <DependentUpon>Alistar.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="views\Infocampeones\Ezreal.aspx.cs">
+      <DependentUpon>Ezreal.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="views\Infocampeones\Ezreal.aspx.designer.cs">
+      <DependentUpon>Ezreal.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="views\Infocampeones\Irelia.aspx.cs">
+      <DependentUpon>Irelia.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="views\Infocampeones\Irelia.aspx.designer.cs">
+      <DependentUpon>Irelia.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="views\Infocampeones\Kaisa.aspx.cs">
+      <DependentUpon>Kaisa.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="views\Infocampeones\Kaisa.aspx.designer.cs">
+      <DependentUpon>Kaisa.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="views\Infocampeones\Lulu.aspx.cs">
+      <DependentUpon>Lulu.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="views\Infocampeones\Lulu.aspx.designer.cs">
+      <DependentUpon>Lulu.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="views\Infocampeones\Morde.aspx.cs">
+      <DependentUpon>Morde.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="views\Infocampeones\Morde.aspx.designer.cs">
+      <DependentUpon>Morde.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="views\Infocampeones\Orn.aspx.cs">
+      <DependentUpon>Orn.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="views\Infocampeones\Orn.aspx.designer.cs">
+      <DependentUpon>Orn.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="views\Infocampeones\Qiyana.aspx.cs">
+      <DependentUpon>Qiyana.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="views\Infocampeones\Qiyana.aspx.designer.cs">
+      <DependentUpon>Qiyana.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="views\Infocampeones\Sion.aspx.cs">
+      <DependentUpon>Sion.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="views\Infocampeones\Sion.aspx.designer.cs">
+      <DependentUpon>Sion.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="views\Infocampeones\Vladimir.aspx.cs">
+      <DependentUpon>Vladimir.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="views\Infocampeones\Vladimir.aspx.designer.cs">
+      <DependentUpon>Vladimir.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="views\Infocampeones\Xerath.aspx.cs">
+      <DependentUpon>Xerath.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="views\Infocampeones\Xerath.aspx.designer.cs">
+      <DependentUpon>Xerath.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="views\register.aspx.cs">
+      <DependentUpon>register.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="views\register.aspx.designer.cs">
+      <DependentUpon>register.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="views\session.aspx.cs">
+      <DependentUpon>session.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="views\session.aspx.designer.cs">
+      <DependentUpon>session.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Site1.Master.cs">
+      <DependentUpon>Site1.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Site1.Master.designer.cs">
+      <DependentUpon>Site1.Master</DependentUpon>
+    </Compile>
+    <Compile Include="views\campeones.aspx.cs">
+      <DependentUpon>campeones.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="views\campeones.aspx.designer.cs">
+      <DependentUpon>campeones.aspx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+    <Content Include="Site1.Master" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup />
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>58075</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>https://localhost:44399/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>Este proyecto hace referencia a los paquetes NuGet que faltan en este equipo. Use la restauración de paquetes NuGet para descargarlos. Para obtener más información, consulte http://go.microsoft.com/fwlink/?LinkID=322105. El archivo que falta es {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
